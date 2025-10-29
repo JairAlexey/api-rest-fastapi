@@ -1,0 +1,95 @@
+{
+  "info": {
+    "name": "Taller 02 – API REST de Envíos (FastAPI)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "6a2a0c50-2a0a-4e8c-8f6b-1234567890ab"
+  },
+  "item": [
+    {
+      "name": "GET /health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "health"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /envios",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/envios",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "envios"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /envios/001",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/envios/001",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "envios",
+            "001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /envios",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": \"002\",\n  \"destinatario\": \"María Gómez\",\n  \"direccion\": \"Calle 10 #5-20\",\n  \"estado\": \"Preparando\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/envios",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "envios"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ]
+}
