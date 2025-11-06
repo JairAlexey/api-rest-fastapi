@@ -101,13 +101,6 @@ Esto generará/actualizará el archivo `openapi.json` en la raíz del proyecto.
 }
 ```
 
-## Evidencias sugeridas
-
-Incluye en la entrega capturas de pantalla de:
-- Swagger UI en `/docs` mostrando los endpoints.
-- Ejecución exitosa de cada endpoint desde Postman.
-- Logs del contenedor al ejecutar con Docker (por ejemplo: línea de arranque de `uvicorn`).
-
 ## Notas de implementación
 
 - Almacenamiento en memoria en `app/storage.py` con un registro precargado:
